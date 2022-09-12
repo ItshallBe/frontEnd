@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: gainsboro;
+            width: 400px;
+            height: 400px;
+            background-image: url("heben.jpg");
+        }
+
+        .img {
+            width: 600px;
+            height: 600px;
+            background-image: url("heben.jpg");
+            background-repeat: no-repeat;
+            background-color: #ccc; /* repeat时，背景颜色将不起作用*/
+            background-position: center top; /* 分别设置x,y方向对齐; 
+                                                x: left | right | center，左右中；y: top | bottom | center 上下中 
+                                                还可以直接设置数值，例如100px 50px*/
+            background-attachment: scroll; /* 设置为fixed，滚动条滚动时依然背景图片不移动；(这里设置为fixed无用:) ) */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">zzx</div>
+    <hr />
+    <div class="img"></div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- http form -->
+    <form action="add.php" method="get" name="iform">
+        <input type="text" name="user" />
+        <input type="submit">
+    </form>
+    <hr color="blue" />
+    <!-- input form -->
+    <form action="">
+        用户名：<input type="text" name="user" /><br>
+        密码：<input type="password" name="pwd" /><br>
+        性别: <input type="radio" name="sex" checked="" /> 男
+        <input type="radio" name="sex" />女
+        <input type="radio" name="sex" />保密<br>
+        爱好: <input type="checkbox" name="hobbies">看电影
+        <input type="checkbox" name="hobbies">划水
+        <input type="checkbox" name="hobbies">游泳
+        <input type="checkbox" name="hobbies">冲浪<br>
+        头像: <input type="file" name="headImag" /><br>
+        <input type="hidden" value="2018" /><br>
+        <input type="submit" value="确认注册" />
+        <input type="reset" />
+        <input type="button" value="提交" />
+        <input type="image" src="heben.jpg" />
+    </form>
+    <hr color="blue" />
+    <!-- 下拉框form -->
+    <form action="">
+        <input type="text" value="张三" disabled="disabled" />
+        <select name="edu">
+            <optgroup label="低學歷">
+                <option value="a">小学</option>
+                <option value="a">初中</option>
+                <option value="a">高中</option>
+            </optgroup>
+            <optgroup label="高學歷">
+                <option value="b" disabled="disabled">大专</option>
+                <option value="c" selected="selected">本科</option>
+            </optgroup>
+            <optgroup>
+                <option value="d">硕士</option>
+                <option value="e">博士</option>
+            </optgroup>
+        </select>
+
+        <input type="submit" />
+    </form>
+</body>
+
+</html>

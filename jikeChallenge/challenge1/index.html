@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>我的订单</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>标题1</h1>
+    <h1 class="title">我的订单</h1>
+
+    <div class="root">
+        <div class="tag">
+            <div class="tagActive" onclick="allSelected()" id="tag_all">全部</div>
+            <div class="tagNormal" onclick="paidSelected()" id="tag_paid">待付款</div>
+            <div class="tagNormal" onclick="sentSelected()" id="tag_sent">待发货</div>
+            <div class="tagNormal" onclick="finishedSelected()" id="tag_finished">已完成</div>
+            <div class="tagNormal" onclick="postSaleSelected()" id="tag_postsale">退款/售后</div>
+        </div>
+
+        <div class="order">
+            <div id="orderContent"></div>
+        </div>
+    </div>
+
 </body>
+
+<script typ="text/javascript" src="order.js"></script>
+
 </html>
